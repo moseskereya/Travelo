@@ -44,7 +44,7 @@ const Event = () => {
                         <p>Map loading</p>
                     ) : (
                       <Map location={event.location} latitude={event.latitude} longitude={event.longitude} /> 
-                    ) }
+                    )}
              </div>
             </div>
             <div className="px-4 py-4">
@@ -56,13 +56,14 @@ const Event = () => {
                     </h1>
                     <h4 className="bold text-gray-900">{event.description}</h4>
                     <p className="mt-1 text-sm text-gray-500">{event.start_date}</p>
-                <p className="text-sm font-medium text-gray-900">{event.end_date}</p>
+                    <p className="text-sm font-medium text-gray-900">{event.end_date}</p>
+                    <button className="text-white py-3 px-3 bg-blue-600">Attend</button>
                 </div>
                 </div>
             </div>
       </div>
-  )
- }
+   )
+  }
 }
    
 

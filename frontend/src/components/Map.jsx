@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css';
 const Map = ({ title, location, latitude, longitude }) => {
 const mapCenter = [latitude, longitude];
   return (
-    <MapContainer center={mapCenter} zoom={20} style={{ height: '400px', width: '350px'}}>
+    <MapContainer center={mapCenter} zoom={20} style={{ height: '400px', width: '450px'}}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={mapCenter}>
         <Popup>
